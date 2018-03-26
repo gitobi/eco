@@ -1,19 +1,27 @@
 defmodule Eco.Mixfile do
   use Mix.Project
 
+  @description """
+  Ecto Wrapper
+  """
+
   def project do
     [
       app: :eco,
       version: "0.0.1",
       elixir: "~> 1.5",
-      description: "Ecto Wrapper"
-      package: [
-        maintainers: ["Takuro Onoda"],
-        licenses: ["MIT"],
-        links: %{"GitHub" => "https://github.com/gitobi/eco"}
-      ],
+      description: @description
+      package: package,
       start_permanent: Mix.env == :prod,
       deps: deps()
+    ]
+  end
+
+  defp package do
+    [
+      maintainers: ["takuro.onoda"],
+      licenses: ["MIT"],
+      links: %{"GitHub" => "https://github.com/gitobi/eco"}
     ]
   end
 
