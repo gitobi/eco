@@ -10,7 +10,7 @@ by adding `eco` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:eco, "~> 0.1.0"}
+    {:eco, "~> 0.0.1"}
   ]
 end
 ```
